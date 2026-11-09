@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Навчальне портфоліо веброзробника">
+  <title>Портфоліо розробника — Андрій Коваленко</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #1d2d32; background: #f3f6f7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: inherit; }
+    .wrap { width: min(1000px, calc(100% - 2.5rem)); margin: auto; }
+    .hero { padding: 4rem 0 3.5rem; background: #173c43; color: #f4f8f6; }
+    .hero .wrap { display: flex; justify-content: space-between; align-items: end; gap: 2rem; }
+    .kicker { letter-spacing: .13em; text-transform: uppercase; color: #a8d5bd; font-size: .8rem; }
+    h1, h2 { font-family: Georgia, serif; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin: .5rem 0; line-height: 1.05; }
+    .hero p { max-width: 650px; line-height: 1.7; }
+    .badge { border: 1px solid #67918c; padding: .55rem .8rem; border-radius: 999px; white-space: nowrap; }
+    nav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #dce5e2; z-index: 2; }
+    nav ul { display: flex; flex-wrap: wrap; gap: 1.5rem; list-style: none; padding: 1rem 0; margin: 0; }
+    nav a { text-decoration: none; font-weight: 650; color: #285c58; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 2.5rem 0 4rem; }
+    section { scroll-margin-top: 5rem; padding: 1.5rem 0 2rem; border-bottom: 1px solid #d9e2de; }
+    h2 { font-size: 2rem; color: #23544f; margin: 0 0 1rem; }
+    p, li { line-height: 1.75; }
+    .about { max-width: 760px; }
+    .skills { display: flex; flex-wrap: wrap; gap: .7rem; padding: 0; list-style: none; }
+    .skills li { padding: .45rem .8rem; border-radius: 999px; background: #e0eee5; color: #27594d; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .card { padding: 1.35rem; background: white; border: 1px solid #dce5e2; border-radius: 14px; box-shadow: 0 8px 24px #193e4310; }
+    .card h3 { margin: .15rem 0 .5rem; }
+    .card p { margin: .5rem 0; }
+    .tag { font-size: .85rem; color: #57736b; }
+    .project-link { color: #1c6555; font-weight: 700; }
+    footer { padding: 2rem 0; background: #e7eeeb; }
+    footer p { margin: .4rem 0; }
+    .contact { display: flex; gap: .6rem; flex-wrap: wrap; }
+    @media (max-width: 650px) {
+      .hero .wrap { display: block; }
+      .badge { display: inline-block; margin-top: 1rem; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Портфоліо · веброзробка</p>
+        <h1>Андрій Коваленко</h1>
+        <p>Початківець у фронтенд-розробці. Створюю зрозумілі вебсторінки та вивчаю, як зробити їх доступними й зручними.</p>
+      </div>
+      <span class="badge">Відкритий до навчальних проєктів</span>
+    </div>
+  </header>
+
+  <nav aria-label="Навігація сторінкою">
+    <div class="wrap">
+      <ul>
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#skills">Навички</a></li>
+        <li><a href="#projects">Мої проєкти</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">Про мене</h2>
+      <div class="about">
+        <p>Мені подобається перетворювати ідеї на прості, охайні інтерфейси. Зараз я зосереджений на основах HTML і CSS та вчуся будувати сторінки з логічною структурою.</p>
+        <p>У роботі ціную <span class="tag">увагу до деталей</span>, доступність і зрозумілий код. Поза навчанням люблю читати й фотографувати місто.</p>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Навички</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>Семантична розмітка</li>
+        <li>Основи CSS</li>
+        <li>Git та GitHub</li>
+        <li>Адаптивний дизайн</li>
+      </ul>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Мої проєкти</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="tag">Навчальний проєкт · HTML</p>
+          <h3>Сторінка про хобі</h3>
+          <p>Невелика сторінка з заголовками, списком, ілюстрацією та зовнішнім посиланням.</p>
+          <a class="project-link" href="index.html">Переглянути сторінку →</a>
+        </article>
+
+        <article class="card">
+          <p class="tag">Навчальний проєкт · Форми</p>
+          <h3>Реєстрація на курс</h3>
+          <p>Форма з підписами полів, типами введення та вбудованою перевіркою браузера.</p>
+          <a class="project-link" href="registration.html">Переглянути форму →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <div class="wrap">
+      <h2>Контакти</h2>
+      <div class="contact">
+        <span>Напишіть мені:</span>
+        <a href="mailto:andrii@example.com">andrii@example.com</a>
+      </div>
+      <p>Навчальне портфоліо. Контактні дані й проєкти є прикладами.</p>
+    </div>
+  </footer>
+</body>
+</html>

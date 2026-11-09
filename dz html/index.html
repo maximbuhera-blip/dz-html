@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Моє хобі — фотографування природи">
+  <title>Моє хобі — фотографування</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #23302c; background: #f5f7f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { padding: 4rem max(1.25rem, calc((100vw - 920px)/2)) 3rem; color: #fff; background: linear-gradient(125deg,#164d41,#387d64); }
+    .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; opacity: .82; }
+    h1 { max-width: 720px; margin: .6rem 0; font-family: Georgia, serif; font-size: clamp(2.6rem, 7vw, 4.5rem); line-height: 1.04; }
+    header p { max-width: 620px; font-size: 1.12rem; line-height: 1.7; }
+    main { width: min(920px, calc(100% - 2.5rem)); margin: 2.5rem auto 4rem; }
+    .intro { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+    figure { margin: 0; }
+    figure img { display: block; width: 100%; border-radius: 18px; box-shadow: 0 14px 35px #24372b22; }
+    figcaption { margin-top: .65rem; color: #65746c; font-size: .9rem; }
+    h2 { margin: 0 0 .8rem; color: #245f4d; font-family: Georgia, serif; font-size: 1.8rem; }
+    p, li { line-height: 1.75; }
+    section { margin-top: 2.5rem; }
+    .note { padding: 1.25rem 1.5rem; border-left: 4px solid #79a96a; background: #eaf1e7; border-radius: 0 12px 12px 0; }
+    a { color: #17634e; font-weight: 650; }
+    footer { border-top: 1px solid #dce4da; padding: 1.3rem; text-align: center; color: #647269; }
+    @media (max-width: 680px) {
+      .intro { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Мій вільний час · творча практика</p>
+    <h1>Моє хобі — фотографування</h1>
+    <p>Камера допомагає помічати красу звичайних речей: ранкового світла, фактури старих будівель і швидких змін погоди.</p>
+  </header>
+
+  <main>
+    <div class="intro">
+      <div>
+        <h2>Чому я фотографую</h2>
+        <p>Я захопився фотографією, бо люблю зберігати моменти, які інакше легко забути. Найчастіше знімаю природу та міські вулиці під час прогулянок.</p>
+        <p>Це хобі вчить мене бути уважнішим. Навіть знайоме місце виглядає по-новому, якщо змінити ракурс або дочекатися м’якого вечірнього світла.</p>
+      </div>
+
+      <figure>
+        <img src="hobby.svg" alt="Ілюстрація фотоапарата на тлі зелених пагорбів і вечірнього сонця">
+        <figcaption>Мій улюблений сюжет — природа на заході сонця.</figcaption>
+      </figure>
+    </div>
+
+    <section>
+      <h2>Що потрібно для зйомки</h2>
+      <p>Почати можна навіть зі смартфона. Для прогулянки я беру лише кілька речей:</p>
+      <ul>
+        <li>камеру або смартфон;</li>
+        <li>запасний акумулятор;</li>
+        <li>цікавість до деталей навколо.</li>
+      </ul>
+    </section>
+
+    <section class="note">
+      <h2>Де я вчуся</h2>
+      <p>Я переглядаю роботи інших фотографів і читаю поради про композицію та світло. Ось корисний ресурс для початківців: <a href="https://www.nationalgeographic.com/photography">National Geographic Photography</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Навчальна сторінка · HTML, завдання 1</p>
+  </footer>
+</body>
+</html>

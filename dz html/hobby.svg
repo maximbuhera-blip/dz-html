@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Пагорби на заході сонця</title>
+  <desc id="desc">Стилізована ілюстрація пейзажу та фотоапарата</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#f6c886"/>
+      <stop offset="1" stop-color="#e8a778"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sky)"/>
+  <circle cx="670" cy="150" r="75" fill="#fff1bc"/>
+  <path d="M0 350Q160 235 340 355T680 330T900 340V600H0Z" fill="#6f9d77"/>
+  <path d="M0 430Q180 300 390 430T760 405T900 420V600H0Z" fill="#346d5c"/>
+  <g transform="translate(295 300)">
+    <rect x="0" y="32" width="300" height="188" rx="26" fill="#263c39"/>
+    <path d="M72 32l24-52h104l27 52" fill="#263c39"/>
+    <circle cx="151" cy="126" r="72" fill="#f4eee0"/>
+    <circle cx="151" cy="126" r="52" fill="#397d80"/>
+    <circle cx="151" cy="126" r="32" fill="#173b48"/>
+    <circle cx="164" cy="113" r="10" fill="#acd8cf"/>
+    <rect x="228" y="52" width="32" height="14" rx="7" fill="#e9bb72"/>
+  </g>
+  <path d="M0 543q150-30 300 0t300 0t300 0v57H0Z" fill="#254e46" opacity=".6"/>
+</svg>
